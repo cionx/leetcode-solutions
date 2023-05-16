@@ -1,6 +1,6 @@
 // Naive method
-function map(arr: number[], fn: (n: number, i :number) => number): number[] {
-  const result: number[] = [];
+function map<T, U>(arr: T[], fn: (n: T, i :number) => U): U[] {
+  const result: U[] = [];
   for (let i = 0; i < arr.length; i++) {
     result[i] = fn(arr[i], i);
   }
@@ -8,8 +8,8 @@ function map(arr: number[], fn: (n: number, i :number) => number): number[] {
 }
 
 // Slighly fancier
-function map(arr: number[], fn: (n: number, i :number) => number): number[] {
-  const result: number[] = [];
+function map<T, U>(arr: T[], fn: (n: T, i :number) => U): U[] {
+  const result: U[] = [];
   for (const kvPair of arr.entries()) {
     result.push( fn(kvPair[1], kvPair[0]) );
   }
