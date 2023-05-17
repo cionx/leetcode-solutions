@@ -1,3 +1,3 @@
 function createHelloWorld() {
-	return ((...args) => "Hello World");
+  return (() => "Hello World");
 }
