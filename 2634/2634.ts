@@ -10,8 +10,8 @@ function filter<T, U>(arr: T[], fn: (n: T, i: number) => U): T[] {
 // Fancier
 function filter<T, U>(arr: T[], fn: (n: T, i: number) => U): T[] {
   const result: T[] = [];
-  for (const kvPair of arr.entries())
-    if ( fn(kvPair[1], kvPair[0]) )
-      result.push(kvPair[1]);
+  for (const [index, value] of arr.entries())
+    if ( fn(value, index) )
+      result.push(value);
   return result;
 }

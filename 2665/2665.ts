@@ -8,8 +8,8 @@ function createCounter(init: number): ReturnObj {
   let n: number = init;
 
   return {
-    increment: (() => ++n),
-    decrement: (() => --n),
-    reset: (() => n = init),
+    increment: () => ++n,
+    decrement: () => --n,
+    reset: () => n = init,
   };
 }
