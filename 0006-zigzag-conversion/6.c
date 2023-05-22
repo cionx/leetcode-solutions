@@ -11,19 +11,13 @@
         F         P         Z
 */
 
-char* convert(char* s, unsigned int numRows);
+char *convert(char *s, int numRows);
 
-char* convert(char* s, unsigned int numRows) {
-	unsigned long len = strlen(s);
-	/* The following line makes Leetcode crash with
-	   ==22==ERROR: AddressSanitizer: heap-buffer-overflow:
-	     char* result = malloc( (len + 1) * sizeof(char) );
-	   This makes absolutely no sense to me.
-	   But it forces me to use a much slower alternative: */
-	char* result = strdup(s);
-	printf("%lu", sizeof(result));
-	unsigned int i, j;
-	unsigned int single_step, two_step_1, two_step_2;
+char *convert(char *s, int numRows) {
+	int len = (int) strlen(s);
+	char *result = malloc(((size_t)len + 1) * sizeof(char));
+	int i, j;
+	int single_step, two_step_1, two_step_2;
 
 	if (numRows == 1)
 		return s;
@@ -31,13 +25,13 @@ char* convert(char* s, unsigned int numRows) {
 	/* the top row */
 	single_step = 2 * numRows - 2;
 	j = 0;
-	for(i = 0; i < len; i += single_step) {
+	for (i = 0; i < len; i += single_step) {
 		result[j] = s[i];
 		j++;
 	}
 	if (numRows > 1) {
 		/* the middle rows */
-		for (unsigned int row = 1; row < numRows - 1; row++) {
+		for (int row = 1; row < numRows - 1; row++) {
 			i = row;
 			two_step_1 = single_step - 2 * i;
 			two_step_2 = 2 * i;
@@ -53,16 +47,19 @@ char* convert(char* s, unsigned int numRows) {
 			}
 		}
 		/* the bottom row */
-		for(i = numRows - 1; i < len; i += single_step) {
+		for (i = numRows - 1; i < len; i += single_step) {
 			result[j] = s[i];
 			j++;
 		}
 	}
-
+	result[len] = '\0';
 	return result;
 }
 
 int main(void) {
 	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	printf("%s\n", convert(s, 6));
+	char *result = convert(s, 6);
+	printf("%s\n", result);
+	free (result);
+	return 0;
 }
