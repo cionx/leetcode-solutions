@@ -11,7 +11,7 @@
  * the given situation. We simply adapt the previous code for this problem. */
 
 /* findMin: searches via binary search for the left-most index i with
- * nums[0] <= ... <= nums[i - 1] >= nums[i] <= ... <= nums[n - 1] <= nums[0],
+ * nums[0] < ... < nums[i - 1] > nums[i] < ... < nums[n - 1] < nums[0],
  * assuming that such an index exists. */
 int findMin(int *nums, int numsSize)
 {
