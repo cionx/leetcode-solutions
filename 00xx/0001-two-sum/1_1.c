@@ -1,3 +1,10 @@
+/* 1. Two Sum */
+
+/* Complexities.
+ * Time: O(n log(n))
+ * Space: O(n)
+ * where n is the length of the input list. */
+
 #include <stdio.h>
 #include <stdlib.h>
 
