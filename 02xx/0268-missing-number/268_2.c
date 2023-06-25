@@ -3,17 +3,15 @@
  */
 int missingNumber(int *nums, int numsSize)
 {
-	int partialSum = 0;
+
+	long long partialSum = 0;
 	for (int i = 0; i < numsSize; ++i)
 		partialSum += nums[i];
 
-	int totalSum = numsSize * (numsSize + 1) / 2;
-	int missing = totalSum - partialSum;
+	long long totalSum = numsSize * ((long long) numsSize + 1) / 2;
+	long long missing = totalSum - partialSum;
 
-	return missing;
+	return (int) missing;
 }
-/* Note: an int is only guaranteed to have 16 bit, which may not be enough to
- * hold totalSum, so an overflow may occur. Similar for partialSum. But these
- * potential overflows don’t affect the difference totalSum - partialSum, since
- * it will lie in the range of int.
- */
+
+/* Note: we use long long to avoid overflows. */
