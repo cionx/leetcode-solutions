@@ -1,3 +1,10 @@
+/* 279. Perfect Squares */
+
+/* Complexities.
+ * Time: O(LIMIT + n^(3/2))
+ * Space: O(LIMIT)
+ * where LIMIT is 10000 and n is the input number. */
+
 #include <stdbool.h>
 
 #define LIMIT 10000
@@ -26,8 +33,7 @@ int numSquares(int n)
 	/* Otherwise we continue calculating where we left off last time. */
 	for (int k = getNextIndex(results); k <= n; ++k) {
 		int min = results[k - 1];
-		int sqr;
-		for (int d = 2; (sqr = d * d) <= k; ++d)
+		for (int d = 2, sqr; (sqr = d * d) <= k; ++d)
 			if (results[k - sqr] < min)
 				min = results[k - sqr];
 		results[k] = min + 1;
