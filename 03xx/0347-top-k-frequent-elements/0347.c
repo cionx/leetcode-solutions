@@ -1,7 +1,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 int *topKFrequent(int *nums, int numsSize, size_t k, int *returnSize);
 bool elementIn(int number, int array[], size_t arraySize);
@@ -50,20 +49,4 @@ bool elementIn(int number, int array[], size_t arraySize) {
 		if (number == array[i])
 			return true;
 	return false;
-}
-
-/* Don’t copy the following. */
-
-int main(void) {
-	int nums[6] = {1, 1, 1, 2, 2, 3};
-	size_t k = 2;
-	int* returnSize = malloc(sizeof(int));
-
-	int* result = topKFrequent(nums, 6, k, returnSize);
-	for (int i = 0; i < *returnSize; i++)
-		printf("%d\n", result[i]);
-
-	free(returnSize);
-	free(result);
-	return 0;
 }

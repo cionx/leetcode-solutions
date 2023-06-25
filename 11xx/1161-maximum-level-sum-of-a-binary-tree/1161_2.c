@@ -7,7 +7,6 @@
  * Like solution 1, but in C.
  */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 struct TreeNode {

@@ -1,8 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-char **divideString(char *s, int k, char fill, int *returnSize);
 
 char **divideString(char *s, int k, char fill, int *returnSize) {
 	int len = (int)strlen(s);
@@ -33,24 +30,4 @@ char **divideString(char *s, int k, char fill, int *returnSize) {
 
 	*returnSize = number;
 	return result;
-}
-
-/* Don’t copy the below to LeetCode. */
-
-int main(void) {
-	char s[] = "abcdefghij";
-	int k = 3;
-	int *size = malloc(sizeof(int));
-	char fill = 'x';
-
-	char **result = divideString(s, k, fill, size);
-	printf("%d\n", *size);
-	for (int i = 0; i < *size; ++i)
-		printf("%s\n", result[i]);
-
-	for (int i = 0; i < *size; ++i)
-		free(result[i]);
-	free(result);
-	free(size);
-	return 0;
 }

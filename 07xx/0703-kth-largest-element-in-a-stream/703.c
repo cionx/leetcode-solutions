@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct {
@@ -70,30 +69,4 @@ void kthLargestFree(KthLargest *stream)
 {
 	free(stream->largest);
 	free(stream);
-}
-
-/* Don’t copy the below to LeetCode. */
-
-/**
- * Your KthLargest struct will be instantiated and called as such:
- * KthLargest* obj = kthLargestCreate(k, nums, numsSize);
- * int param_1 = kthLargestAdd(obj, val);
-
- * kthLargestFree(obj);
-*/
-
-int main(void)
-{
-	int k = 7;
-	int nums[] = {-10,1,3,1,4,10,3,9,4,5,1};
-	KthLargest *stream = kthLargestCreate(k, nums, 11);
-	int adds[] = {3, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6};
-	for (int i = 0; i < 27; ++i) {
-		printf("%d ", kthLargestAdd(stream, adds[i]));
-	}
-	putchar('\n');
-
-	kthLargestFree(stream);
-
-	return 0;
 }

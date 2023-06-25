@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /* The general pattern is as follows:
@@ -44,30 +43,4 @@ int *spiralOrder(int **matrix, int matrixSize, int *matrixColSize,
 
 	*returnSize = m * n;
 	return result;
-}
-
-int main(void)
-{
-	int row1[] = {1, 2, 3, 4, 5};
-	int row2[] = {6, 7, 8, 9, 10};
-	int row3[] = {11, 12, 13, 14, 15};
-	int row4[] = {16, 17, 18, 19, 20};
-	int row5[] = {21, 22, 23, 24, 25};
-
-	int *(matrix)[] = {row1, row2, row3, row4, row5};
-	int matrixSize = 5;
-	int matrixColSize[] = {5, 5, 5, 5, 5};
-
-	int *returnSize = malloc(sizeof(int));
-	*returnSize = 0;
-	int *result = spiralOrder(matrix, matrixSize, matrixColSize, returnSize);
-
-	for (int l = 0; l < *returnSize; ++l)
-		printf("%d ", result[l]);
-	printf("\n");
-
-	/* How do I free matrix? */
-	free(returnSize);
-	free(result);
-	return 0;
 }

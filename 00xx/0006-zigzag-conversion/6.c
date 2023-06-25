@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -54,12 +53,4 @@ char *convert(char *s, int numRows) {
 	}
 	result[len] = '\0';
 	return result;
-}
-
-int main(void) {
-	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *result = convert(s, 6);
-	printf("%s\n", result);
-	free (result);
-	return 0;
 }

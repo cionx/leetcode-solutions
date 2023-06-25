@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -35,8 +34,6 @@ int calcIndex(int k, int i, int j);
 /* Auxiliary functions. */
 int cmpFunction(const void *a, const void *b);
 int min(int a, int b);
-/* Debugging. */
-void printCache(int *cache, int k);
 
 int minCost(int n, int *cuts, int cutsSize)
 {
@@ -92,7 +89,6 @@ int minCost(int n, int *cuts, int cutsSize)
 		for (int i = 0, j = i + stepSize; j <= k; ++i, ++j)
 			generateCacheValue(cache, k, n, cuts, i, j);
 
-	printCache(cache, k);
 	const int result = getValue(cache, k, 0, k);
 
 	free(sorted);
@@ -142,29 +138,4 @@ int cmpFunction(const void *a, const void *b)
 {
 	const int *A = a, *B = b;
 	return (*A > *B) - (*A < *B);
-}
-
-void printCache(int *cache, int k)
-{
-	for (int i = 0; i <= k; ++i) {
-		printf("i = %d |", i);
-		for (int j = 0; j <= k; ++j)
-			printf(" %2d", getValue(cache, k, i, j));
-		printf("\n");
-	}
-	printf("\n");
-}
-
-/* Don’t copy the below to LeetCode. */
-
-int main(void)
-{
-	int n = 2;
-	int cuts[] = {1};
-	int cutSize = 1;
-
-	int result = minCost(n, cuts, cutSize);
-	printf("%d\n", result);
-
-	return 0;
 }

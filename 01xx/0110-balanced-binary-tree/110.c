@@ -1,5 +1,5 @@
 #include <stdbool.h>
-#include <stdio.h>
+#include <stdlib.h> /* For NULL. */
 
 /* Don’t copy this struct to LeetCode. */
 struct TreeNode {

@@ -1,5 +1,4 @@
 #include <stdbool.h>
-#include <stdio.h>
 
 int longestSubarray(int *nums, int numsSize);
 
@@ -35,12 +34,4 @@ int longestSubarray(int *nums, int numsSize)
 	}
 
 	return onlyOnes ? (max - 1) : max;
-}
-
-int main(void)
-{
-	int nums[] = {1, 1, 1};
-	printf("%d\n", longestSubarray(nums, 3));
-
-	return 0;
 }

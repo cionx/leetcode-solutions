@@ -5,7 +5,6 @@
  * Space: O(n)
  * where n is the length of the input list. */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 /* Suppose that nums is sorted and consists of n elements. We try to solve
@@ -103,22 +102,4 @@ int cmpEntryFunction(const void *a, const void *b)
 int cmpIntFunction(int a, int b)
 {
 	return (a > b) - (a < b);
-}
-
-/* Testing */
-
-int main(void)
-{
-	int nums[] = {-3, 4, 3, 90};
-	int numsSize = 4;
-	int target = 0;
-	int *returnSize = calloc(1, sizeof(int));
-
-	int *result = twoSum(nums, numsSize, target, returnSize);
-	printf("Result: %d %d\n", result[0], result[1]);
-
-	free(returnSize);
-	free(result);
-
-	return 0;
 }

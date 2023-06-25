@@ -7,7 +7,6 @@
  * and h is the height of the tree.
  */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 struct TreeNode {

@@ -6,7 +6,7 @@
  * where n is the length of the list.
  */
 
-#include <stdio.h> /* for NULL */
+#include <stdlib.h> /* for NULL */
 
 /* Do not copy the following struct definition to LeetCode. */
 struct ListNode {

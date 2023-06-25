@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 #define MODULO 1##000##000##007 /* 10^9 + 7 */
@@ -140,14 +139,4 @@ largeInt binomialModulo(int n, int k)
 	cache[cacheIndex] = result;
 
 	return result;
-}
-
-int main(void)
-{
-	const int input[] = {2, 1, 3};
-	const int inputSize = 3;
-
-	printf("%lld\n", numOfPermut(input, inputSize));
-
-	return 0;
 }

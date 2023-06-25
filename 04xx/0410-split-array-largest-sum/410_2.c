@@ -7,7 +7,6 @@
  * (Note that thanks to memoization, the recursion doesn’t give us cursed
  * running time.) */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct {

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 double new21Game(int n, int k, int maxPts);
@@ -70,15 +69,4 @@ double new21Game(int n, int k, int maxPts)
 	free(probs);
 
 	return result;
-}
-
-int main(void)
-{
-	int n = 21;
-	int k = 17;
-	int maxPts = 10;
-	double result = new21Game(n, k, maxPts);
-
-	printf("n = %d, k = %d, maxPts = %d  -->  %f\n", n, k, maxPts, result);
-	return 0;
 }

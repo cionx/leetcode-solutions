@@ -1,7 +1,4 @@
 #include <stdbool.h>
-#include <stdio.h>
-
-bool equalFrequency(const char *word);
 
 bool equalFrequency(const char *word)
 {
@@ -117,11 +114,4 @@ bool equalFrequency(const char *word)
 		return outliner == common + 1 || outliner == 1;
 
 	return (common == 1) ? true : false;
-}
-
-int main(void)
-{
-	char word[] = "abcc";
-
-	printf("%d\n", equalFrequency(word));
 }

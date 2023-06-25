@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /* Don’t copy this definition to LeetCode. */
