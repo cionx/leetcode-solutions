@@ -1,3 +1,5 @@
+/* 1451. Rearrange Words in a Sentence */
+
 function arrangeWords(text: string): string {
   const words: string[] = text.split(" ");
 

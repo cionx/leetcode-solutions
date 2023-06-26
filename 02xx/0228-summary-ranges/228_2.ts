@@ -1,6 +1,10 @@
-/* Time: Best case:  O(log(n))
- *       Worst case: O(n log(n))
+/* 228. Summary Ranges */
+
+/* Complexities.
+ * Time: best case: O(log(n))
+ *       worst case: O(n log(n))
  * Space: O(1)
+ * where n is the length of the input array.
  */
 
 /* Main observation:

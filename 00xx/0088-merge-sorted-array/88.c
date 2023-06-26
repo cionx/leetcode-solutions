@@ -1,5 +1,9 @@
-/* Time: O(m + n)
+/* 88. Merge Sorted Arrays */
+
+/* Complexities.
+ * Time: O(m + n)
  * Space: O(m + n)
+ * where m and n are the lengths of the input arrays respectively.
  */
 
 #include <stdlib.h>

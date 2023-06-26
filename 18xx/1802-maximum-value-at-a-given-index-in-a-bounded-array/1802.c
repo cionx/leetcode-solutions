@@ -1,3 +1,10 @@
+/* 1802. Maximum Value at a Given Index in a Bounded Array */
+
+/* Complexities.
+ * Time: O(log(n))
+ * Space: O(1)
+ * where n is as given in the problem statement. */
+
 #include "1802.h"
 
 /* See the LeetCode editorical for a detailed explanation. */

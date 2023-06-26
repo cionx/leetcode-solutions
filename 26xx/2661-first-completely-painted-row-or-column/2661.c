@@ -1,5 +1,12 @@
-#include <stdlib.h>
+/* 2661. First Completely Painted Row or Column */
+
+/* Complexities.
+ * Time: O(m n)
+ * Space: O(m n)
+ * where m × n is the size of the input matrix. */
+
 #include "2661.h"
+#include <stdlib.h>
 
 int firstCompleteIndex(const int *arr, int arrSize, const int **mat,
                        int matSize, const int *matColSize)
@@ -18,7 +25,6 @@ int firstCompleteIndex(const int *arr, int arrSize, const int **mat,
 
 	int *rowCounter = calloc((size_t) m, sizeof(int));
 	int *columnCounter = calloc((size_t) n, sizeof(int));
-
 
 	int result = -1;
 	for (int k = 0; k < arrSize; ++k) {

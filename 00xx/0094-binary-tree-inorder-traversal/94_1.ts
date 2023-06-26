@@ -1,10 +1,12 @@
-/* Recursive solution
- *
+/* 94. Binary Tree Inorder Traversal */
+
+/* Recursive solution */
+
+/* Complexities
  * Time: O(n)
  * Space: O(h)
- *
- * where n denotes the number of nodes in the tree
- * and h denotes the height of the tree
+ * where n is the number of nodes in the tree
+ * and h is the height of the tree.
  */
 
 class TreeNode {

@@ -1,3 +1,5 @@
+/* 547. Number of Provinces */
+
 type City = number;
 
 function findCircleNum(isConnected: number[][]): number {

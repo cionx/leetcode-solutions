@@ -1,11 +1,14 @@
-/* numArrayCreate:
+/* 303. Range Sum Query - Immutable */
+
+/* Complexities.
+ *
+ * numArrayCreate:
  * Time: O(1);
  * Space: (1);
  *
  * numArraySumRange:
  * Time: O(right - left);
- * Space: O(1);
- */
+ * Space: O(1);           */
 
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+/* 2632. Curry */
+
 type Fn<T, U> = (...params: T[]) => U;
 type CurFn<T, U> = (...params: T[]) => U | CurFn<T, U>;
 

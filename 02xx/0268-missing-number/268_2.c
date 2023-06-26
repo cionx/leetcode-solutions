@@ -1,6 +1,11 @@
-/* Time:  O(n)
+/* 268. Missing Number */
+
+/* Complexities.
+ * Time:  O(n)
  * Space: O(1)
+ * where n is the length of the input array.
  */
+
 int missingNumber(int *nums, int numsSize)
 {
 

@@ -1,3 +1,5 @@
+/* 2621. Group By */
+
 declare global {
   interface Array<T> {
     groupBy(fn: (item: T) => string): Record<string, T[]>;

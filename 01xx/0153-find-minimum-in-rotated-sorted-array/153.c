@@ -1,8 +1,8 @@
 /* 153: Find Minimum in Rotated Sorted Array. */
 
 /* Complexities
- * - Time: O(log(n))
- * - Space: O(1)
+ * Time: O(log(n))
+ * Space: O(1)
  * where n is the length of the input array. */
 
 /* Note:

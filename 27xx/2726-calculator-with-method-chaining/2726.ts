@@ -1,3 +1,5 @@
+/* 2726. Calculator With Method Chaining */
+
 class Calculator {
   result: number;
 

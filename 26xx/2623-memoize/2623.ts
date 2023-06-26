@@ -1,3 +1,5 @@
+/* 2623. Memoize */
+
 type Fn<T, U> = (...params: T[]) => U;
 
 /** JavaScript Maps cannot handle keys that are arrays.
@@ -19,4 +21,3 @@ function memoize<T, U>(fn: Fn<T, U>): Fn<T, U> {
     }
   };
 }
-

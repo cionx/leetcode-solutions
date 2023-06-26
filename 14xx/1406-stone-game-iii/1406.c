@@ -1,3 +1,10 @@
+/* 1406. Stone Game III */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(n)
+ * where n is the length of the input list. */
+
 #include <stdbool.h>
 #include <stdlib.h>
 

@@ -1,3 +1,10 @@
+/* 2706. Buy Two Chocolates */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 #define LARGER_THAN_ANY_PRICE 101
 
 int buyChoco(const int *prices, int pricesSize, int money)

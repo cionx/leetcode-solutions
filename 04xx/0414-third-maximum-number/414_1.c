@@ -3,7 +3,7 @@
 /* Complexity.
  * Time: O(n) with only one pass
  * Space: O(1)
- * where n is the length of the input list. */
+ * where n is the length of the input array. */
 
 #include <stdbool.h>
 

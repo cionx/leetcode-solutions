@@ -1,3 +1,10 @@
+/* 21. Merge Two Sorted Lists */
+
+/* Complexities.
+ * Time: O(m + n)
+ * Space: O(1)
+ * where m and n are the lenghts of the input arrays respectively. */
+
 #include <stdlib.h>
 
 /* Don’t copy this definition to LeetCode. */
@@ -24,7 +31,7 @@ struct ListNode *mergeTwoLists(struct ListNode *list1, struct ListNode *list2)
 			list2 = list2->next;
 		}
 		struct ListNode *tail = result;
-		
+
 		/* The main loop. */
 		while (list1 != NULL && list2 != NULL) {
 			if (list1->val < list2->val) {

@@ -1,11 +1,12 @@
-/* Time: O(n)
- * Space: with tail recursion: O(w)
- *        without tail recursion: O(h + w)
- *
- * where n is the number of nodes in the tree,
- * w is the “width” of the tree: the largest number of nodes on the same level,
- * and h is the height of the tree.
- */
+/* 1161. Maximum Level Sum of a Binary Tree */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: with tail recursion elimination: O(w)
+ *        without tail recursion elimination: O(h + w)
+ * where n is the number of nodes in the tree, and w is the “width” of the
+ * tree (the largest number of nodes on the same level) and h is the height of
+ * the tree. */
 
 class TreeNode {
   val: number;

@@ -1,6 +1,8 @@
-/* Time: O(1)
- * Space: O(1)
- */
+/* 2469. Convert the Temperature */
+
+/* Complexities.
+ * Time: O(1)
+ * Space: O(1) */
 
 #include <stdlib.h>
 

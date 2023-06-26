@@ -1,6 +1,11 @@
-#include <stdbool.h>
+/* 1493. Longest Subarray of 1’s After Deleting one Element */
 
-int longestSubarray(int *nums, int numsSize);
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
+#include <stdbool.h>
 
 int longestSubarray(int *nums, int numsSize)
 {

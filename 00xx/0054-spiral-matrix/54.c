@@ -1,3 +1,10 @@
+/* 54. Spiral Matrix */
+
+/* Complexities
+ * Time: O(m n)
+ * Space: O(1)
+ * where the input matrix of of size m × n. */
+
 #include <stdlib.h>
 
 /* The general pattern is as follows:

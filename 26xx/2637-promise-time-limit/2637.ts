@@ -1,3 +1,5 @@
+/* 2637. Promise Time Limit */
+
 type Fn<T, U> = (...params: T[]) => Promise<U>;
 
 function timeLimit<T, U>(fn: Fn<T, U>, t: number): Fn<T, U> {

@@ -1,3 +1,11 @@
+/* 110. Balanced Binary Tree */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(h)
+ * where n is the number of nodes in the tree
+ * and h is the height of the tree. */
+
 #include <stdbool.h>
 #include <stdlib.h> /* For NULL. */
 

@@ -1,3 +1,5 @@
+/* 2624. Snail Traversal */
+
 /* We mentally arrange the values of [a, b, c, d, e, ...] as follows:
  *
  *   a         j k         t u

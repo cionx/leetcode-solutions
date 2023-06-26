@@ -1,6 +1,9 @@
-/* Time: O(log(n))
+/* 1780. Check if Number is a Sum of Powers of Three */
+
+/* Complexities.
+ * Time: O(log(n))
  * Space: O(1)
- */
+ * where n is the input number. */
 
 #include <stdbool.h>
 

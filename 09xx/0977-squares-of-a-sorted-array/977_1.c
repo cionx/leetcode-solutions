@@ -1,10 +1,11 @@
-/* Time: O(n)
- * Space: O(1)
- *
- * where n is the length of the input list.
- */
+/* 977. Squares of a Sorted Array */
 
-/* This code assumes that int has at least 32bit, as required by LeetCode.
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input list. */
+
+/* This code assumes that int has at least 32 bit, as required by LeetCode.
  * (I tried using long instead of int, but this breaks LeetCode’s testing. */
 
 #include <stdlib.h>

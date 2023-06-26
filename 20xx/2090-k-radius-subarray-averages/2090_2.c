@@ -1,8 +1,10 @@
-/* Prefix sum approach
- *
+/* 2090. K Radius Subarray Averages */
+
+/* Prefix sum approach. */
+
+/* Complexities
  * Time: O(n)
  * Space: O(n)
- *
  * where n is the length of the input list.
  */
 

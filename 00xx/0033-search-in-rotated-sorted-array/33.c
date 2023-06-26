@@ -1,6 +1,8 @@
-/* Time: O(log(n))
+/* 33. Search in Rotated Sorted Array */
+
+/* Complexities.
+ * Time: O(log(n))
  * Space: O(1)
- *
  * where n is the length of the input array.
  */
 

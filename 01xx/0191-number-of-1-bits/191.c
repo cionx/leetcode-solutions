@@ -1,3 +1,10 @@
+/* 191. Number of 1 Bits */
+
+/* Complexities.
+ * Time: O(d)
+ * Space: O(1)
+ * where n is the input number and d ~ log(n) is the number of digits of n. */
+
 #include <stdint.h>
 
 int hammingWeight(uint32_t n)

@@ -1,7 +1,10 @@
-/* Recursive solution, immutable arrays
+/* 589. N-ary Tree Preorder Traversal */
+
+/* Recursive solution, immutable arrays. */
+
+/* Complexities.
  * Time: O(n)
  * Space: ?
- *
  * where n is the number of nodes in the tree,
  * and h is the height of the tree.
  */

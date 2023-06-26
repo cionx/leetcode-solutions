@@ -1,3 +1,5 @@
+/* 1603. Design Parking System */
+
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -31,11 +33,3 @@ void parkingSystemFree(ParkingSystem *lot)
 {
 	free(lot);
 }
-
-/**
- * Your ParkingSystem struct will be instantiated and called as such:
- * ParkingSystem* obj = parkingSystemCreate(big, medium, small);
- * bool param_1 = parkingSystemAddCar(obj, carType);
-
- * parkingSystemFree(obj);
-*/

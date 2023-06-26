@@ -1,3 +1,5 @@
+/* 303. Range Sum Query - Immutable */
+
 /* numArrayCreate:
  * Time: O(n);
  * Space: O(n);
@@ -6,8 +8,7 @@
  * Time: O(1);
  * Space: O(1);
  *
- * where n is the lengt of the input array
- */
+ * where n is the length of the input array. */
 
 #include <stdlib.h>
 

@@ -1,6 +1,8 @@
-/* Time: O(1)
- * Space: O(1)
- */
+/* 2446. Determine if Two Events Have Conflicts */
+
+/* Complexities.
+ * Time: O(1)
+ * Space: O(1) */
 
 #include <stdbool.h>
 

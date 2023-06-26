@@ -1,6 +1,10 @@
-/* Time: Best case:  O(n^2)
- *       Worst case: O(n^2 log(n))
+/* 2352. Equal Row and Column Pairs */
+
+/* Complexities.
+ * Time: best case: O(n^2)
+ *       worst case: O(n^2 log(n))
  * Space: O(n^2)
+ * where n × n is the size of the input grid.
  */
 type Grid<T> = T[][];
 

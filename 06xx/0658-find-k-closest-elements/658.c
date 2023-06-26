@@ -1,6 +1,6 @@
 /* 658. Find K Closest Elements */
 
-/* Complexities
+/* Complexities.
  * Time: O(log(n) + k)
  * Space: O(1)
  * where n is the length of the input list. */

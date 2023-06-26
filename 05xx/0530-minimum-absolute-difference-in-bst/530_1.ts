@@ -1,8 +1,9 @@
-/* Time: O(n)
+/* 530. Minimum Absolute Difference in BST */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(n)
- *
- * where n is the number of nodes in the tree.
- */
+ * where n is the number of nodes in the tree. */
 
 class TreeNode {
   val: number;

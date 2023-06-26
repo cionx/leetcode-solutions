@@ -1,7 +1,11 @@
-/* Iterative solution.
- *
+/* 326. Power of Three */
+
+/* Iterative solution. */
+
+/* Complexities.
  * Time O(log(n))
  * Space: O(1)
+ * where n is the input number.
  */
 
 #include <stdbool.h>

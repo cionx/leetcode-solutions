@@ -1,3 +1,10 @@
+/* 50. Pow(x, n) */
+
+/* Complexities.
+ * Time: O(log(n))
+ * Space: O(1)
+ * where n is the length of the input list. */
+
 #include <limits.h>
 
 double myPow(double x, int n)

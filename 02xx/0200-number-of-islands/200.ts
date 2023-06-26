@@ -1,3 +1,10 @@
+/* 200. Number of Islands */
+
+/* Complexities.
+ * Time: ?
+ * Space: O(m n)
+ * where m × n is the size of the input grid. */
+
 type Field = [row: number, column: number];
 
 enum Type {

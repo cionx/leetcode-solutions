@@ -1,3 +1,5 @@
+/* 2633. Convert Object to JSON String */
+
 type PrimitiveValue = string | number | boolean | null;
 type MyObject = PrimitiveValue | MyObject[] | { [key: string]: MyObject };
 

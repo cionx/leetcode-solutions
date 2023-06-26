@@ -1,3 +1,5 @@
+/* 2732. Add Two Promises */
+
 async function addTwoPromises(
   promise1: Promise<number>,
   promise2: Promise<number>,

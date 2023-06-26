@@ -1,3 +1,5 @@
+/* 2665. Counter II */
+
 type ReturnObj = {
   increment: () => number;
   decrement: () => number;

@@ -1,3 +1,5 @@
+/* 2618. Check if Object Instance of Class */
+
 function checkIfInstanceOf(obj: unknown, classFunction: {prototype: unknown}): boolean {
   function isInheritedInstance(proto1: unknown, proto2: unknown): boolean {
     if (proto1 === proto2) {

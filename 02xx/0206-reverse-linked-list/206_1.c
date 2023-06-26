@@ -1,9 +1,11 @@
-/* Recursive solution, in-place.
- *
+/* 206. Reverse Linked List */
+
+/* Recursive solution, in-place. */
+
+/* Complexities.
  * Time: O(n)
- * Space: without tail recursion elimination: O(n)
- *        with tail recursion elimination: O(1)
- *
+ * Space: with tail recursion elimination: O(1)
+ *        without tail recursion elimination: O(n)
  * where n is the length of the list.
  */
 

@@ -1,11 +1,13 @@
-/* Time: O(n)
+/* 1161. Maximum Level Sum of Binary Tree */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- *
- * Like solution 1, but in C.
- */
+ * and h is the height of the tree. */
+
+/* Note.
+ * Like solution 1, but in C. */
 
 #include <stdlib.h>
 

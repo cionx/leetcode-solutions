@@ -1,3 +1,5 @@
+/* 2101. Detonate the Maximum Bombs */
+
 type Bomb = [xCoord: number, yCoord: number, radius: number];
 
 function maximumDetonation(bombs: Bomb[]): number {

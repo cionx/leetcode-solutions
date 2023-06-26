@@ -1,8 +1,14 @@
+/* 1547. Minimum Cost to Cut a Stick */
+
+/* Complexities.
+ * Time: O(m^3)
+ * Space: O(n^2)
+ * where m is the length of the input array. */
+
 #include <stdlib.h>
 #include <string.h>
 
-/*
- * For k = cutsSize + 1, we will ultimately split apart the interval [0, n] into
+/* For k = cutsSize + 1, we will ultimately split apart the interval [0, n] into
  * k many subintervals. We will number the endpoints of these intervals all the
  * way from 0 through k (inclusive). Assuming that cuts is sorted in ascending
  * order, the situation will thus look as follows:

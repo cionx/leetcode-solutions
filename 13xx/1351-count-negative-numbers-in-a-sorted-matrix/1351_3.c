@@ -1,4 +1,10 @@
-/* Worst case: O(m + n) */
+/* 1351. Count Negative Numbers in a Sorted Matrix */
+
+/* Complexities.
+ * Time: O(m + n)
+ * Space: O(1)
+ * where m × n is the size of the input matrix. */
+
 int countNegatives(int **grid, int gridSize, int *gridColSize)
 {
 	int m = gridSize;

@@ -3,8 +3,7 @@
 /* Complexities.
  * Time: O(l^2 f)
  * Space: Θ(l f)
- * where l is the number of locations and f is the starting fuel.
- */
+ * where l is the number of locations and f is the starting fuel. */
 
 #include <stdlib.h>
 

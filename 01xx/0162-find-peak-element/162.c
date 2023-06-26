@@ -1,7 +1,9 @@
-/* Time: O(n)
+/* 162. Find Peak Element */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(1)
- *
- * where n is the length of the input list.
+ * where n is the length of the input array.
  */
 
 /* We have the following four possible cases:

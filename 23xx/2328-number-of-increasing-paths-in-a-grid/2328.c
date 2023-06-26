@@ -1,9 +1,14 @@
-/* Time: O(m n)
+/* 2328. Number of Increasing Paths in a Grid */
+
+/* Complexities.
+ * Time: O(m n)
  * Space: O(m n)
- */
+ * where the input grid is of size m × n. */
+
 #include <stdlib.h>
 
 #define MODULO 1##000##000##007 /* 10^9 + 7 */
+
 /* long is guaranted to have 32 bits, giving a maximal value of
  * 2,147,483,647 ≈ 2.1e9. This means that we can add two long values smaller
  * than MODULO without an overflow.

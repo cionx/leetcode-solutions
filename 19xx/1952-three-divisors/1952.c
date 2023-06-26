@@ -1,9 +1,11 @@
-/* Time: O(fourth root of n)
- * Space: O(1)
- */
+/* 1952. Three Divisors */
 
-/* We need to check if the given input n is the square of a prime number.
- */
+/* Complexities.
+ * Time: O(n^(1/4))
+ * Space: O(1)
+ * where n is the input number. */
+
+/* We need to check if the given input n is the square of a prime number. */
 
 #include <stdbool.h>
 
@@ -16,7 +18,8 @@ bool isThree(int n)
 	int sqr = square(n);
 	if (sqr == -1)
 		return false;
-	else return isPrime(sqr);
+	else
+		return isPrime(sqr);
 }
 
 int square(int n)
@@ -37,7 +40,6 @@ int square(int n)
 
 	return -1;
 }
-
 
 int isPrime(int n)
 {

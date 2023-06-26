@@ -1,3 +1,10 @@
+/* 401. Binary Watch */
+
+/* Complexities.
+ * Time: ?
+ * Space: ?
+ * where n is the input number.
+
 /* There are at most binom(10, 5) = 252 many results, so we can do recursion
  * without worrying about exponential growth. */
 

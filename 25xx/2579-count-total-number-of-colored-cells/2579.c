@@ -1,5 +1,11 @@
+/* 2579. Count Total Number of Colored Cells */
+
+/* Complexities.
+ * Time: O(1)
+ * Space: O(1) */
+
 /* By turning our heads by 45 degrees, the n-th figure is a square with edge
- * length n. Going from the n-th square to the (n + 1)-th square adds four time
+ * length n. Going from the n-th square to the (n + 1)-th square adds four times
  * the edge length as new cells:
  *
  *           4
@@ -25,17 +31,17 @@
 
 /* Alternatively, we can decompose the n-th figure into two actual squares:
  *
- *             X                             X
- *           X O X                         X   X                       O
- *         X O X O X                     X   X   X                   O   O
- *       X O X O X O X                 X   X   X   X               O   O   O
- *     X O X O X O X O X             X   X   X   X   X           O   O   O   O
- *   X O X O X O X O X O X   -->   X   X   X   X   X   X   +   O   O   O   O   O
- *     X O X O X O X O X             X   X   X   X   X           O   O   O   O
- *       X O X O X O X                 X   X   X   X               O   O   O
- *         X O X O X                     X   X   X                   O   O
- *           X O X                         X   X                       O
- *             X                             X
+ *             X                            X
+ *           X O X                        X   X                       O
+ *         X O X O X                    X   X   X                   O   O
+ *       X O X O X O X                X   X   X   X               O   O   O
+ *     X O X O X O X O X            X   X   X   X   X           O   O   O   O
+ *   X O X O X O X O X O X   ==   X   X   X   X   X   X   +   O   O   O   O   O
+ *     X O X O X O X O X            X   X   X   X   X           O   O   O   O
+ *       X O X O X O X                X   X   X   X               O   O   O
+ *         X O X O X                    X   X   X                   O   O
+ *           X O X                        X   X                       O
+ *             X                            X
  *
  * We get a total of
  *   n^2 + (n - 1)^2

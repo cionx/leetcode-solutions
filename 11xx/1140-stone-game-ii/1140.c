@@ -1,3 +1,10 @@
+/* 1140. Stone II */
+
+/* Complexities.
+ * Time: O(n^3)
+ * Space: O(n^2)
+ * where n is the length of the input array. */
+
 #include <stdlib.h>
 
 int stoneGameII(int *piles, int pSize);

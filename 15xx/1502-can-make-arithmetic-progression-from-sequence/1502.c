@@ -1,3 +1,10 @@
+/* 1502. Can Make Arithmetic Progression From Sequence */
+
+/* Complexities.
+ * Time: O(n log(n))
+ * Space: O(n)
+ * where n is the length of the input array */
+
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,7 +33,7 @@ bool canMakeArithmeticProgression(int *arr, int arrSize)
 
 int cmpFunction(const void *pa, const void *pb)
 {
-	int *a = (int *) pa;
-	int *b = (int *) pb;
+	const int *a = (const int *) pa;
+	const int *b = (const int *) pb;
 	return (*a > *b) - (*a < *b);
 }

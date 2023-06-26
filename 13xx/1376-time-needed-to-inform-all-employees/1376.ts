@@ -1,3 +1,5 @@
+/* 1376. Time Needed to Inform All Employees */
+
 type Id = number;
 type Time = number;
 

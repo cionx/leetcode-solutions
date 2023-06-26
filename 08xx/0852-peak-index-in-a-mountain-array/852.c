@@ -1,6 +1,8 @@
-/* Time:  O(log(n))
+/* 852. Peak Index in a Mountain Array */
+
+/* Complexities.
+ * Time:  O(log(n))
  * Space: O(1)
- *
  * where n is the length of the input array.
  */
 
@@ -15,8 +17,7 @@ int cmpInt(int a, int b);
 long peakIndexInMountainArray(int *array, long arraySize)
 {
 	/* It is given that the searched-for index i satisfies
-	 * 0 < i < arraySize - 1.
-	 */
+	 * 0 < i < arraySize - 1. */
 	long lower = 1;
 	long upper = arraySize - 2;
 

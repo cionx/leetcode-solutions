@@ -1,3 +1,5 @@
+/* 2700. Difference Between Two Objects */
+
 type MyObject = { [key: string]: Value };
 type Value = Primitive | Nested;
 type Primitive = number | boolean | string | null;

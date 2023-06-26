@@ -1,6 +1,9 @@
-/* Time: O(log(n))
+/* 263. Ugly Number */
+
+/* Complexities.
+ * Time: O(log(n))
  * Space: O(1)
- */
+ * where n is the input number. */
 
 #include <stdbool.h>
 

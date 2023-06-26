@@ -1,8 +1,12 @@
-/* Recursive solution.
- *
+/* 326. Power of Three */
+
+/* Recursive solution. */
+
+/* Complexities.
  * Time O(log(n))
- * Space: Without tail recursion elimination: O(log(n))
- *        With tail recursion elimination: O(1)
+ * Space: with tail recursion elimination: O(1)
+ *        without tail recursion elimination: O(log(n))
+ * where n is the input number.
  */
 
 #include <stdbool.h>

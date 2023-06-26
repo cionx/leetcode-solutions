@@ -1,3 +1,10 @@
+/* 1491. Average Salary Excluded the Minimum and Maximum */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input list. */
+
 double average(int *salary, int salarySize)
 {
 	int max, min, sum;

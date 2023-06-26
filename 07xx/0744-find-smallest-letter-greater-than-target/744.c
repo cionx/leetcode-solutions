@@ -1,3 +1,10 @@
+/* 744. Find Smallest Letter Greater Than Target */
+
+/* Complexities.
+ * Time: O(log(n))
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 char nextGreatestLetter(char *letters, int lettersSize, char target);
 int binarySearch(char arr[], int lower, int upper, char value);
 

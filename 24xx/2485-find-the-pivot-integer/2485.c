@@ -1,7 +1,9 @@
-/* Time: O(log(n^2)) = O(2 log(n)) = O(log(n))
+/* 2485. Find the Pivot Integer */
+
+/* Complexities.
+ * Time: O(log(n^2)) = O(2 log(n)) = O(log(n))
  * Space: O(1)
- *
- * where n is the input integer. */
+ * where n is the input number. */
 
 /* Using Gauss’s summation formula
  *   ∑_{k = 1}^n k = n (n + 1) /2 ,
@@ -9,7 +11,7 @@
  *   ∑_{k = 1}^x k = ∑_{k = x}^n k
  * to
  *   x^2 = n (n + 1) / 2 .
- * There is probably a nice geometric reason for this, but I don’t know it.
+ * There is probably a nice geometric intuition, for this, but I don’t know it.
  */
 
 int pivotInteger(int n);

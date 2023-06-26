@@ -1,5 +1,10 @@
-/* Recursive solution, bottom to top
- */
+/* 257. Binary Tree Paths */
+
+/* Complexities.
+ * Time: ?
+ * Space: ? */
+
+/* Recursive solution, bottom to top */
 
 class TreeNode {
   val: number;
@@ -11,7 +16,6 @@ class TreeNode {
     this.right = right === undefined ? null : right;
   }
 }
-
 /* Do not copy the above class definition to LeetCode. */
 
 function binaryTreePaths(root: TreeNode | null): string[] {

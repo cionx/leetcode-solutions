@@ -1,3 +1,5 @@
+/* 1396. Design Underground System */
+
 type Id = number;
 type Station = string;
 type Time = number;

@@ -1,3 +1,5 @@
+/* 2619. Array Prototype Last */
+
 declare global {
   interface Array<T> {
     last(): T | -1;

@@ -1,7 +1,13 @@
+/* 1351. Count Negative Numbers in a Sorted Matrix */
+
+/* Complexities:
+ * Time: O(m log(n))
+ * Space: O(1)
+ * where m × n is the size of the input matrix. */
+
 int countNegatives(int **grid, int gridSize, int *gridColSize);
 int firstNegative(int **grid, int row, int n);
 
-/* Worst case: O(m log(n)) */
 int countNegatives(int **grid, int gridSize, int *gridColSize)
 {
 	int m = gridSize;

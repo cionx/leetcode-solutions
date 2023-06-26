@@ -1,3 +1,10 @@
+/* 283. Move Zeroes */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 #include <string.h>
 
 void moveZeroes(int* nums, int numsSize){

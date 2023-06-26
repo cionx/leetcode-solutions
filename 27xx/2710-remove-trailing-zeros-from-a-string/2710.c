@@ -1,3 +1,10 @@
+/* 2710. Remove Trailing Zeros From a String */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input string. */
+
 #include <stdlib.h>
 
 char *removeTrailingZeros(char *num)

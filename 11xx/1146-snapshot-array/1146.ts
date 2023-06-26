@@ -1,3 +1,5 @@
+/* 1146. Snapshot Array */
+
 type SnapId = number;
 type Index = number;
 type entry = [SnapId, number];

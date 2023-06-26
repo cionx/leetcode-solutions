@@ -1,11 +1,12 @@
-/* Recursive solution
- *
+/* 226. Invert Binary Tree */
+
+/* Recursive solution */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- */
+ * and h is the height of the tree. */
 
 #include <stdlib.h>
 

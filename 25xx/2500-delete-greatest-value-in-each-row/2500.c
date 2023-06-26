@@ -1,5 +1,9 @@
-/* Time: O(m n log(n))
+/* 2500. Delete Greatest Value in Each Row */
+
+/* Complexities.
+ * Time: O(m n log(n))
  * Space: O(m n)
+ * where the input grid is of size m × n.
  */
 
 /* Idea: we sort each row, and then sum up the maximum of each column. */

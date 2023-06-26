@@ -1,3 +1,17 @@
+/* 202. Happy Number */
+
+/* Complexities.
+ * Time: O(extremly fast)
+ * Space: O(1)
+ * Regarding the complexity: we need to get below 100, and after that we have at
+ * most a fixed number of further loop iterations, and thus only O(1) additional
+ * steps. To get below 100 we are basically taking repeated logarithms, as
+ * 81 d ≈ 81 log10(n), where d is the number of digits of n. This process is
+ * extremly fast, but I don’t know if there is a closed expression for the
+ * resulting running time. (We seem need an inverse for the repeated exponential
+ * function x -> a^x -> a^(a^x) -> a^(a^(a^x)), so in inverse to some kind of
+ * arrow function. */
+
 #include <stdbool.h>
 
 int square(int a);

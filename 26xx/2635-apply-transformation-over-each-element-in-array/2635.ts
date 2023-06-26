@@ -1,3 +1,5 @@
+/* 2635. Apply Transformation Over Each Element in Array */
+
 // Naive method
 function map<T, U>(arr: T[], fn: (n: T, i :number) => U): U[] {
   const result: U[] = [];

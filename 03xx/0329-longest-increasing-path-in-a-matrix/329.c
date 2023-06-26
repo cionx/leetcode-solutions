@@ -1,9 +1,12 @@
-/* Time: O(m n )
+/* 329. Longest Increasing Path in a Matrix */
+
+/* Complexities.
+ * Time: O(m n )
  * Space: O(m n)
- *
- * Note: LeetCode assumes that int has at least 32 bits, but the C standard only
- * guarantees 16 bits.
- */
+ * where the input grid is of size m × n. */
+
+/* Note: LeetCode assumes that int has at least 32 bits, but the C standard only
+ * guarantees 16 bits. */
 
 #include <stdlib.h>
 

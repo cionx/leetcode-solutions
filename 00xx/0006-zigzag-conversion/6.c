@@ -1,3 +1,10 @@
+/* 6. Zigzag Conversion */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 #include <stdlib.h>
 #include <string.h>
 

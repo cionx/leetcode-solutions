@@ -1,8 +1,10 @@
-/* Sliding window approach
- *
+/* 2090. K Radius Subarray Averages */
+
+/* Sliding window approach. */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(1)
- *
  * where n is the length of the input list.
  */
 

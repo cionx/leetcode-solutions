@@ -1,3 +1,5 @@
+/* 2215. Find the Difference of Two Arrays */
+
 function findDifference(nums1: number[], nums2: number[]): number[][] {
   const result: number[][] = [[], []];
 

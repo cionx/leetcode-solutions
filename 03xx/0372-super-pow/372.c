@@ -1,9 +1,10 @@
-/* Time: O(d)
- * Space: O(1);
- *
+/* 372. Super Pow */
+
+/* Complexities.
+ * Time: O(d)
+ * Space: O(1)
  * where d is the number of digits of the exponent, and if the modulo number is
- * fixed as 1337.
- */
+ * fixed as 1337. */
 
 /* The prime factorization of 1337 is 7 ⋅ 191. By the Chinese remainder theorem,
  * we have therefore ℤ/1337 ≅ ℤ/7 × ℤ/191. The inverse isomorphism is given by

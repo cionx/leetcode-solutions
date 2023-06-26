@@ -1,3 +1,5 @@
+/* 1187. Make Array Strictly Increasing */
+
 /* This solution is a clusterfuck, but I need to submit in a few minutes. */
 
 /* Key observations:

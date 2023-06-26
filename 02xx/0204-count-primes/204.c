@@ -1,6 +1,9 @@
-/* Time: ???
+/* 204. Count Primes */
+
+/* Complexities.
+ * Time: ?
  * Space: O(n)
- */
+ * where n is the input number. */
 
 /* We will use the sieve of Eratosthenes, with the following minor changes:
  * - We will only sieve through the odd numbers 3, 5, 7, 9, 11, ...

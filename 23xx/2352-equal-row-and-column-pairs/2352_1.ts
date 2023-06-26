@@ -1,6 +1,9 @@
-/* Time:  O(n^2)
+/* 2352. Equal Row and Column Pairs */
+
+/* Complexities.
+ * Time: O(n^2)
  * Space: O(n^2)
- */
+ * where n × n is the size of the input grid. */
 
 /* We regard the columns of the grid as paths in a tree. For example, the given
  * example [[3,2,1],[1,7,6],[2,7,7]] corresponds to the following tree:

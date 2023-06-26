@@ -1,8 +1,11 @@
-/* Time: O(log(n))
- * Space O(1)       */
+/* 374. Guess Number Higher or Lower */
 
-/**
- * int guess(int num);
+/* Complexities
+ * Time: O(log(n))
+ * Space O(1)
+ * where n is the length of the input array.
+
+/* int guess(int num):
  * -1 if num is higher than the picked number
  *  1 if num is lower than the picked number
  *  0 otherwise

@@ -1,5 +1,9 @@
-/* Time:  O(n^3)
+/* 2352. Equal Row and Column Pairs */
+
+/* Complexities.
+ * Time:  O(n^3)
  * Space: O(1)
+ * where n × n is the size of the input array.
  */
 
 type Grid<T> = T[][];

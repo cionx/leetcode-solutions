@@ -1,3 +1,10 @@
+/* 46. Permutations */
+
+/* Complexities.
+ * Time: O(n!)
+ * Space: O(n!)
+ * where n is the length of the input array. */
+
 function permute(nums: number[]): number[][] {
   if (nums.length == 0) {
     return [[]];

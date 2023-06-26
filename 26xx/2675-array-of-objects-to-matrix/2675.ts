@@ -1,3 +1,5 @@
+/* 2678. Array of Objects to Matrix */
+
 /* I would like to use Record<string, Value> for MyObject, but this makes
  * TypeScript unable to handle the recursive nature of the types. I’m not sure
  * if this is intended by the TypeScript developers.

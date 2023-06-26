@@ -1,3 +1,10 @@
+/* 202. Happy Number */
+
+/* Complexities.
+ * Time: O(extremly fast)
+ * Space: O(1)
+ * See the previous solution for more details on the time complexity. */
+
 #include <stdbool.h>
 
 int happyValue(int n);

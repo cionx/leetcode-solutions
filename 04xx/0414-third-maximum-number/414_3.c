@@ -3,7 +3,7 @@
 /* Complexity.
  * Time: O(n log(n))
  * Space: O(n)
- * where n is the length of the input list. */
+ * where n is the length of the input array. */
 
 #include <stdbool.h>
 #include <stdlib.h>

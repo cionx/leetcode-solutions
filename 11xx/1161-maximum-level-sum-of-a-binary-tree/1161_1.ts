@@ -1,9 +1,10 @@
-/* Time: O(n)
+/* 1161. Maximum Level Sum of a Binary Tree */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- */
+ * and h is the height of the tree. */
 
 class TreeNode {
   val: number;

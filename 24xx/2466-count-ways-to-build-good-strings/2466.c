@@ -1,13 +1,21 @@
-# include <stdlib.h>
+/* 2466. Count Ways to Build Good Strings */
 
-# define NORESULT   -1
-# define MODULO     1000000007
+/* Complexities.
+ * Time: O(high)
+ * Space: O(high)
+ * where high is as in the problem description. */
 
-int computeValue(int low, int high, int one, int zero, int result[]);
+#include <stdlib.h>
+
+#define NORESULT -1
+#define MODULO   1##000##000##007
+
 int countGoodStrings(int low, int high, int zero, int one);
+int computeValue(int low, int high, int one, int zero, int result[]);
 
-int countGoodStrings(int low, int high, int zero, int one) {
-	int* results = malloc( sizeof(int) * ((unsigned int) high + 1) );
+int countGoodStrings(int low, int high, int zero, int one)
+{
+	int *results = malloc(((size_t) high + 1) * sizeof(int));
 	for (int i = 0; i <= high; i++) {
 		results[i] = NORESULT;
 	}
@@ -24,8 +32,8 @@ int computeValue(int low, int high, int zero, int one, int results[])
 	else if (results[high] == NORESULT) {
 		/* the number of strings coming from the general recursion */
 		results[high] =
-			computeValue(low - zero, high - zero, zero, one, results)
-			+ computeValue(low - one, high - one, zero, one, results);
+			computeValue(low - zero, high - zero, zero, one, results) +
+			computeValue(low - one, high - one, zero, one, results);
 		/* the special case of the empty string */
 		if (low <= 0)
 			results[high]++;

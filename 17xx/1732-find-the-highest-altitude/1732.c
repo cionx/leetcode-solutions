@@ -1,8 +1,9 @@
-/* Time: O(n)
+/* 1732. Find the Highest Altitude */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(1)
- *
- * where n is the lenght of the input list.
- */
+ * where n is the lenght of the input array. */
 
 /* The numbers are small enough that no overflow will occur. */
 

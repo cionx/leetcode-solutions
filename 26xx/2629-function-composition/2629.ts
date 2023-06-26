@@ -1,3 +1,5 @@
+/* 2629. Function Composition */
+
 type F<T> = (x: T) => T;
 
 // more elegant

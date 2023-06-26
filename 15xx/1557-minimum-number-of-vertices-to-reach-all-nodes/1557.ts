@@ -1,3 +1,5 @@
+/* 1557. Minimum Number of Vertices to Reach All Nodes */
+
 /** The result are precisely those vertices that don’t have an incoming edge. **/
 
 function findSmallestSetOfVertices(n: number, edges: number[][]): number[] {

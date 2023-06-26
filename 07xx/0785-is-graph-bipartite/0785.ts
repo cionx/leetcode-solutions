@@ -1,3 +1,5 @@
+/* 785. Is Graph Bipartite */
+
 type Vertex = number;
 type Graph = Vertex[][];
 

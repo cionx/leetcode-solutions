@@ -1,6 +1,8 @@
-/* Time: O(1)
- * Space: O(1)
- */
+/* 2715. Execute Cancellable Function With Delay */
+
+/* Complexities.
+ * Time: O(1)
+ * Space: O(1) */
 
 type Fn<T, U> = (...param: T[]) => U;
 

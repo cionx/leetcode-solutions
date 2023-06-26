@@ -1,8 +1,10 @@
-/* Iterative solution
- *
+/* 25. Reverse Nodes in k-Group */
+
+/* Iterative solution. */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(1)
- *
  * where n is length of input list.
  */
 

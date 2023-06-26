@@ -1,3 +1,5 @@
+/* 2625. Flatten Deeply Nested Array */
+
 /* The generic type T must not be an Array type. That is, T must not be of the
  * form U[] for any other type U.
  */

@@ -1,11 +1,13 @@
-/* Time: O(n)
+/* 783. Minimum Distance Between BST Nodes */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- *
- * Same code as for Problem 530.
- */
+ * and h is the height of the tree. */
+
+/* Note.
+ * Same code as for Problem 530. */
 
 class TreeNode {
   val: number;

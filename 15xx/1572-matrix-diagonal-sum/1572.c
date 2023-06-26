@@ -1,3 +1,10 @@
+/* 1572. Matrix Diagonal Sum */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where the input matrix is of size n × n. */
+
 int diagonalSum(int **matrix, int n, int *matColSize)
 {
 	int sum = 0;

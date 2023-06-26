@@ -1,3 +1,10 @@
+/* 934. Shortest Bridge */
+
+/* Complexities.
+ * Time: O(n^2)
+ * Space: O(n^2)
+ * where n × n is the size of the input matrix. */
+
 enum Type {
   Water = 0,
   Land = 1,

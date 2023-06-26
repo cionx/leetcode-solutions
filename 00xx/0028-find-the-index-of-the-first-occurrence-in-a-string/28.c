@@ -1,4 +1,9 @@
-int strStr(char *haystack, char *needle);
+/* Find the Index of the First Occurrence in a String */
+
+/* Complexities.
+ * Time: O(m n)
+ * Space: O(1)
+ * where m and n are the lengths of m and n respectively. */
 
 int strStr(char *haystack, char *needle)
 {

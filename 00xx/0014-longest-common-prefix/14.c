@@ -1,8 +1,13 @@
+/* 14. Longest Common Prefix. */
+
+/* Complexities.
+ * Time: O(n MAXLENGTH)
+ * Space: O(MAXLENGTH)
+ * where MAXLENGTH = 200 and n is the length of the input array. */
+
 #include <stdlib.h>
 
 #define MAXLENGTH 200
-
-char *longestCommonPrefix(char **strs, int strsSize);
 
 char *longestCommonPrefix(char **strs, int strsSize)
 {

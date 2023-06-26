@@ -1,3 +1,10 @@
+/* 1318. Minimum Flips to Make a OR b Equal to c */
+
+/* Complexities.
+ * Time: O(log(max(a, b, c)))
+ * Space: O(1)
+ * where a, b, c are the input numbers. */
+
 int minFlips(int a, int b, int c)
 {
 	int counter;

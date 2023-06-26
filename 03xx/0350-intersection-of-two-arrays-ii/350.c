@@ -3,7 +3,7 @@
 /* Complexity
  * Time: O(m log(m) + n log(n))
  * Space: O(m + n)
- * where m and n are the length of the two input arrays. */
+ * where m and n are the length of the two input arrays respectively. */
 
 /* Note.
  * The following code is copied from Problem 349 (Intersection of Two Arrays),

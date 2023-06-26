@@ -1,5 +1,9 @@
-/* Time: O(log(bound)^2)
+/* 970. Powerful Integers */
+
+/* Complexities.
+ * Time: O(log(bound)^2)
  * Space: O(bound)
+ * where bound is as in the problem description.
  */
 
 function powerfulIntegers(x: number, y: number, bound: number): number[] {

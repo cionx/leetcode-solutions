@@ -1,3 +1,5 @@
+/* 2628. JSON Depth Equal */
+
 type Primitive = string | number | boolean | null;
 type Json = Primitive | { [property: string]: Json } | Json[];
 

@@ -1,6 +1,11 @@
-#include <stdlib.h>
+/* 837. New 21 Game */
 
-double new21Game(int n, int k, int maxPts);
+/* Complexities.
+ * Time: O(max(k, n))
+ * Space: O(k)
+ * where k and n are as explained in the problem statement. */
+
+#include <stdlib.h>
 
 double new21Game(int n, int k, int maxPts)
 {

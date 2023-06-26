@@ -1,7 +1,9 @@
-/* Time:  O(ℓ1 + ℓ2)
- *        where str1 and str2 are of lengths ℓ1 and ℓ2
+/* 1071. Greatest Common Divisor of Strings */
+
+/* Complexities.
+ * Time:  O(l1 + l2)
  * Space: O(1)
- */
+ * where str1 and str2 are of lengths l1 and l2 respectively. */
 
 /* *****************************************************************************
  * We make the following observations:
@@ -13,9 +15,9 @@
  * If str1 and str2 are of the form (*) for any string str, then gcd(str1, str2)
  * is given by
  *      gcd(str1, str2) = gcd(m, n) * str.
- * If we denote the length of str by ℓ, then it follows that str1 has length
- * n * ℓ and str2 has length m * ℓ. The length of gcd(str1, str2) is then
- *      gcd(m, n) * ℓ = gcd(m * ℓ, n * ℓ).
+ * If we denote the length of str by l, then it follows that str1 has length
+ * n * l and str2 has length m * l. The length of gcd(str1, str2) is then
+ *      gcd(m, n) * l = gcd(m * l, n * l).
  * In other words, we have
  *      length(gcd(str1, str2)) = gcd(length(str1), length(str2)).
  *
@@ -24,8 +26,8 @@
  * *****************************************************************************
  * This leads us to the following algorithms:
  * 1. If one of the two strings is empty, return the other one.
- * 2. Determine the greatest common divisor ℓ of the lengths of str1 and str2.
- * 3. Check that the initial substrings of str1 and str2 of length ℓ are equal.
+ * 2. Determine the greatest common divisor l of the lengths of str1 and str2.
+ * 3. Check that the initial substrings of str1 and str2 of length l are equal.
  * 4. Check that both str1 and str2 are multiples of this initial substring.
  */
 

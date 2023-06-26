@@ -1,3 +1,5 @@
+/* 2694. Event Emitter */
+
 type Callback<T, U> = (...args: T[]) => U;
 type Subscription = { unsubscribe: () => undefined };
 type Event = string;

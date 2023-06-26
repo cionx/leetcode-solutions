@@ -1,7 +1,10 @@
-/* Recursive solution, mutable arrays
+/* 589. N-ary Tree Preorder Traversal */
+
+/* Recursive solution, mutable arrays. */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
  * and h is the height of the tree.
  */

@@ -1,9 +1,10 @@
+/* 1569. Number of Ways to Reorder Array to Get Same BST */
+
 const MODULO = 10 ** 9 + 7;
 const MAXN = 1000;
 
 /* For an explanation of the calculations, we refer to the attacked markdown
- * file.
- */
+ * file. */
 
 function numOfWays(nums: number[]): number {
   return numOfPermut(nums) - 1;
@@ -16,8 +17,7 @@ function numOfPermut(nums: number[]): number {
 
   /* We use a loop instead of .filter() to only traverse the list once. We use
    * a for-let loop instead of a for-of loop to ensure the correct order of
-   * elements in the created subarrays.
-   */
+   * elements in the created subarrays. */
   const first = nums[0];
   const smaller = [];
   const larger = [];

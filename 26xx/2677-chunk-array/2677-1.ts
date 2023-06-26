@@ -1,3 +1,5 @@
+/* 2677. Chunk Array */
+
 function chunk<T>(arr: T[], size: number): T[][] {
   const result: T[][] = [];
   let current: T[] = [];

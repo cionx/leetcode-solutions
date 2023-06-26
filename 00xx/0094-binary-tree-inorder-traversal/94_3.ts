@@ -1,10 +1,12 @@
-/* Iterative solution, as explained in the editorial
- *
+/* 94. Binary Tree Inorder Traversal */
+
+/* Iterative solution, as explained in the editorial. */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree
+ * and h is the height of the tree.
  */
 
 class TreeNode {

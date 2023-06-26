@@ -1,3 +1,10 @@
+/* 1569. Number of Ways to Reorder Array to Get Same BST */
+
+/* Complexities.
+ * Time: O(n^2)
+ * Space: O(n^2)
+ * where n is the length of the input array. */
+
 #include <stdlib.h>
 
 #define MODULO 1##000##000##007 /* 10^9 + 7 */

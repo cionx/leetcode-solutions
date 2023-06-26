@@ -1,3 +1,5 @@
+/* 2649. Nested Array Generator */
+
 type NDArray = (NDArray | number)[];
 
 function* inorderTraversal(arr: NDArray): Generator<number, void, void> {

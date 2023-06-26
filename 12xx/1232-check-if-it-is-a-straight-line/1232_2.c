@@ -1,3 +1,10 @@
+/* 1232. Check If It Is a Straight Line */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 #include <stdbool.h>
 
 /* The line going through the first two points can be described by an equation
@@ -8,8 +15,6 @@
  * be computed as
  *   c = ax₀ + by₀.
  */
-bool checkStraightLine(int **coordinates, int coordinatesSize,
-                       int *coordinatesColSize);
 
 bool checkStraightLine(int **coordinates, int coordinatesSize,
                        int *coordinatesColSize)

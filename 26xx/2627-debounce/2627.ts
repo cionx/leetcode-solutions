@@ -1,3 +1,5 @@
+/* 2627. Debounce */
+
 type Time = number;
 type Call = {
   time: Time;

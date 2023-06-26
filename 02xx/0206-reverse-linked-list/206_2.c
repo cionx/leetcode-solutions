@@ -1,10 +1,11 @@
-/* Iterative solution, in-place.
- *
+/* 206. Reverse Linked List */
+
+/* Iterative solution, in-place. */
+
+/* Complexities.
  * Time: O(n)
  * Space: O(1)
- *
- * where n is the length of the list.
- */
+ * where n is the length of the list. */
 
 #include <stdlib.h> /* for NULL */
 

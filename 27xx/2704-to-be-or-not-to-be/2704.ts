@@ -1,3 +1,5 @@
+/* 2704. To Be Or Not To Be */
+
 type ToBeOrNotToBe<T> = {
   toBe: (val: T) => boolean;
   notToBe: (val: T) => boolean;

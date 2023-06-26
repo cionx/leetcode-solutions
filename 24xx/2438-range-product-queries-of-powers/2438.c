@@ -1,8 +1,11 @@
-/* Time: O(log(n) + q * log(log(n)))
+/* 2438. Range Product Queries of Powers */
+
+/* Complexities.
+ * Time: O(log(n) + q * log(log(n)))
  * Space: O(1)
- *
- * where n is the input number, and q is the length of the query array.
- *
+ * where n is the input number, and q is the length of the query array. */
+
+/*
  * In the time complexity, the last term, log(log(n)) comes about as follows:
  * - For each query, we first determine the resulting exponent sum in O(1).
  * - We then compute the resulting power of 2, which takes log(sum), where sum

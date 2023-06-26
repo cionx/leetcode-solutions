@@ -1,3 +1,10 @@
+/* 1822. Sign of the Product of an Array */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 int arraySign(int* nums, int numsSize){
 	int sign = 1;
 

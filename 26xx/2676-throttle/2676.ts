@@ -1,3 +1,5 @@
+/* 2676 Throttle */
+
 type F<T, U> = (...args: T[]) => U;
 type Time = number;
 type Timer = ReturnType<typeof setTimeout>;

@@ -1,3 +1,5 @@
+/* 2648. Generate Fibonacci Sequence */
+
 function* fibGenerator(): Generator<number, void, void> {
   let first = 0;
   let second = 1;

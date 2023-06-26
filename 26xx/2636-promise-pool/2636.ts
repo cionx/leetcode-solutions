@@ -1,3 +1,5 @@
+/* 2636. Promise Pool */
+
 type F<T> = () => Promise<T>;
 
 function promisePool<T>(functions: F<T>[], poolSize: number): Promise<void> {

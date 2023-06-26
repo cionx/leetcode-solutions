@@ -1,9 +1,10 @@
-/* Time: O(n)
+/* 530. Minimum Absolute Difference in BST. */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(h)
- *
  * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- */
+ * and h is the height of the tree. */
 
 /* Main observation: if the minimal difference is realized by two nodes, then it
  * cannot happen that one node is located in the left subtree while the other

@@ -1,3 +1,10 @@
+/* 2423. Remove Letter to Equalize Frequency */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(26) = O(1)
+ * where n is the length of the input word. */
+
 #include <stdbool.h>
 
 bool equalFrequency(const char *word)

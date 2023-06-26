@@ -1,3 +1,10 @@
+/* 2460. Apply Operations to an Array */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 #include <stdlib.h>
 
 int *applyOperations(int *nums, int numsSize, int *returnSize)

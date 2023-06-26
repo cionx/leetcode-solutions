@@ -1,3 +1,5 @@
+/* 2671. Frequency Tracker */
+
 #include <stdbool.h>
 #include <stdlib.h>
 

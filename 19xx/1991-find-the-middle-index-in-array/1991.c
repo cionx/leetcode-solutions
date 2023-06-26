@@ -3,8 +3,7 @@
 /* Complexity.
  * Time: O(n)
  * Space: O(1)
- * where n is the length of the input list.
- */
+ * where n is the length of the input list. */
 
 /* Note.
  * This problem is the same as 724 (Find Pivot Index). */

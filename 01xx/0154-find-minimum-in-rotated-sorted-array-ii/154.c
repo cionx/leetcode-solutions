@@ -1,11 +1,11 @@
 /* 154. Find Minimum in Rotated Sorted Array II */
 
 /* Complexities.
- * Time: Best case: O(log(n))
- *       Worst case: O(n)
- * Space: Best case: With tail recursion elimination: O(1)
- *                   Without tail recursion elimination: O(log(n))
- *        Worst case: O(log(n))
+ * Time: best case: O(log(n))
+ *       worst case: O(n)
+ * Space: best case: with tail recursion elimination: O(1)
+ *                   without tail recursion elimination: O(log(n))
+ *        worst case: O(log(n))
  * where n is the length of the input array. The worst case occurs if all
  * entries of the input array are equal. The best case occurs if they are all
  * entries are distinct.

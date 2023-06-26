@@ -1,9 +1,11 @@
-/* Recursive solution
- *
+/* 25. Reverse Nodes in k-Group */
+
+/* Recursive solution */
+
+/* Complexities.
  * Time: O(n)
- * Space: without tail recursion elimination: O(n)
- *           with tail recursion elimination: O(1)
- *
+ * Space: with tail recursion elimination: O(1)
+ *        without tail recursion elimination: O(n)
  * where n is length of input list.
  */
 

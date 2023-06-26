@@ -1,3 +1,10 @@
+/* 2665 Combinations */
+
+/* Complexities.
+ * Time: ?
+ * Space: ?
+ * where n and k are as in the problem description. */
+
 /* The following solution uses the approach that is usually used to prove the
  * combinatorical formula
  *   binom(n, k) = binom(n - 1, k) + binom(n - 1, k - 1).

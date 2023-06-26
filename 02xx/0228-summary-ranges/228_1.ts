@@ -1,6 +1,9 @@
-/* Time: O(n)
+/* 228. Summary Ranges */
+
+/* Complexities.
+ * Time: O(n)
  * Space: O(1)
- * where n is the length of the input array nums
+ * where n is the length of the input array.
  */
 function summaryRanges(nums: number[]): string[] {
   const result: string[] = [];

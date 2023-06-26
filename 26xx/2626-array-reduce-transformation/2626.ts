@@ -1,3 +1,5 @@
+/* 2626. Array Reduce Transformation */
+
 type Fn<T, U> = (accum: U, curr: T) => U
 
 function reduce<T, U>(nums: T[], fn: Fn<T, U>, init: U): U {

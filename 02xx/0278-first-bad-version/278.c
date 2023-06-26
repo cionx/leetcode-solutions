@@ -1,8 +1,9 @@
-/* Time: O(log(n))
+/* 278. First Bad Version */
+
+/* Complexities.
+ * Time: O(log(n))
  * Space: O(1)
- *
- * assuming that calls to isBadVersion are in O(1).
- */
+ * where n is the input number. Assumes that isBadVersion is in O(1). */
 
 #include <stdbool.h>
 

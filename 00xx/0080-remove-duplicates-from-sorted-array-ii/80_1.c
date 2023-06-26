@@ -1,4 +1,9 @@
-int removeDuplicates(int *nums, int numsSize);
+/* 80. Remove Duplicates from Sorted Array II */
+
+/* Complexities.
+ * Time: O(n)
+ * Spaces O(1)
+ * where n is the length of the input array. */
 
 int removeDuplicates(int *nums, int numsSize)
 {

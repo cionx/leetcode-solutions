@@ -1,6 +1,9 @@
-/* Time: O(1)
+/* 231. Power of Two */
+
+/* Complexities.
+ * Time: O(1)
  * Space: O(1)
- */
+ * where n is the input number. */
 
 /* Suppose that n > 0. Then by passing from n to n - 1, the following happens:
  *

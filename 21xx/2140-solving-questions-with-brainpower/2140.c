@@ -1,3 +1,10 @@
+/* 2140. Solving Questions With Brainpower */
+
+/* Complexities.
+ * Time: O(n)
+ * Space: O(n)
+ * where n is the length of the input array. */
+
 #include <stdlib.h>
 
 long long mostPoints(int **questions, int questionsSize, int *questionsColSize);
@@ -22,7 +29,7 @@ long long mostPoints(int **questions, int questionsSize, int *questionsColSize)
 	/* Base case. */
 	best[questionsSize - 1] = questions[questionsSize - 1][0];
 
-	/* Recursion. */
+	/* General recursion case (implemented iteratively). */
 	for (int i = questionsSize - 2; i >= 0; --i) {
 		const int j = i + questions[i][1] + 1; /* second summand is positive */
 		const long long withThis =

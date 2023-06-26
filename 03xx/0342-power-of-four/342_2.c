@@ -1,6 +1,8 @@
-/* Time: O(1)
+/* 342. Power of Four */
+
+/* Complexities.
+ * Time: O(1)
  * Space: O(1)
- *
  * where n is the input integer. */
 
 /* Recall from problem 231 that a number n > 0 is a power of two if and only if

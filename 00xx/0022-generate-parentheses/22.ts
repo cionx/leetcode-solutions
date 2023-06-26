@@ -1,3 +1,5 @@
+/* 22. Generate Parentheses */
+
 function generateParenthesis(n: number): string[] {
   /* It could be useful to remember the cache outside the function, to prevent
    * repeated calculation among multiple calls to the function.

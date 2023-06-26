@@ -1,5 +1,9 @@
-/* Time: O(log(n))
+/* 2529. Maximum Count of Positive and Negative Integers */
+
+/* Complexities.
+ * Time: O(log(n))
  * Space: O(1)
+ * where n is the length of the input array.
  */
 
 int maximumCount(int *nums, int numsSize);

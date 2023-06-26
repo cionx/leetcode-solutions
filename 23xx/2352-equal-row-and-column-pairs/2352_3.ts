@@ -1,6 +1,10 @@
-/* Time: Best case:  O(n^2)
- *       Worst case: O(n^3)
+/* 2352. Equal Row and Column Pairs */
+
+/* Complexities.
+ * Time: best case: O(n^2)
+ *       worst case: O(n^3)
  * Space: O(n)
+ * where n × n is the size of the input grid.
  */
 
 

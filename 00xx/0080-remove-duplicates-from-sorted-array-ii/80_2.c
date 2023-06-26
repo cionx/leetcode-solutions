@@ -1,3 +1,10 @@
+/* 80. Remove Duplicates from a Sorted Array */
+
+/* Complexities.
+ * Time: something between O(n) and O(n log(n))
+ * Space: O(1)
+ * where n is the length of the input array. */
+
 int removeDuplicates(int *nums, int numsSize);
 int nextIndex(int *nums, int lower, int upper, int value);
 

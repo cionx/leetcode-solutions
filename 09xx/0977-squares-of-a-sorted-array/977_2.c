@@ -1,6 +1,8 @@
-/* Time: O(n log(n))
+/* 977. Squares of a Sorted Array */
+
+/* Complexities.
+ * Time: O(n log(n))
  * Space: O(1)
- *
  * where n is the length of the input array
  */
 
