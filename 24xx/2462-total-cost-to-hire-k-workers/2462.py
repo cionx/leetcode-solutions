@@ -1,14 +1,14 @@
+""" 2462. Total Cost to Hire K Workers """
+
 """
-2462. Total Cost to Hire K Workers
-
 Complexities.
-Time: O(m log(m) + k log(m)) (amortized)
-Space: O(m)
-where m is an abbreviation for `canditates`.
+Time: O(c + k log(c))
+Space: O(c)
+where c is an abbreviation for `canditates`.
 
-(Regard the time complexity: creating a binary heap of size l should take
-O(l log(l)) steps. Removing an element takes O(log(l)) steps, whereas inserting
-a new element takes O(1) steps.)
+(Regarding the time complexity: creating a binary heap of size l takes O(l).
+Removing an element takes O(log(l)) steps, whereas inserting a new element
+takes O(1) steps.)
 """
 import heapq
 
