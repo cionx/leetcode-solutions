@@ -3,51 +3,59 @@
 /* Complexities
  * Time: O(m n)
  * Space: O(1)
- * where the input matrix of of size m × n. */
+ * where m × n is the size of the input matrix. */
+
+/* The general pattern is as follows:
+ *  1. n     right
+ *  2. m     down
+ *  3. n - 1 left
+ *  4. m - 1 up
+ *  5. n - 2 right
+ *  6. m - 2 down
+ *  7. n - 3 left
+ *  8. m - 3 down
+ *  ⋮
+ * We see that we alternate between two lengths, which are slowly decremented.
+ * The direction in which we move changes as follows:
+ *  (0, 1)
+ *  (1, 0)
+ *  (0, -1)
+ *  (-1, 0)
+ *  ⋮
+ *  repeat
+ *  ⋮
+ *  That is, (di, dj) becomes (dj, -di). */
 
 #include <stdlib.h>
 
-/* The general pattern is as follows:
- *          n     right   ->   m     down
- *     ->   n - 1 left    ->   m - 1 up
- *     ->   n - 2 right   ->   m - 2 down
- *     ->   n - 3 left    ->   m - 3 down
- *     ->   ...
- */
-
-int *spiralOrder(int **matrix, int matrixSize, int *matrixColSize,
-                 int *returnSize);
-
-int *spiralOrder(int **matrix, int matrixSize, int *matrixColSize,
-                 int *returnSize)
+int *spiralOrder(int **mat, int matSize, int *matColSize, int *returnSize)
 {
-	int m = matrixSize;
-	int n = matrixColSize[0];
+	int m = matSize;       /* Height. */
+	int n = matColSize[0]; /* Width. */
 
-	int k = 0;
-	int *result = malloc((size_t) (m * n) * sizeof(int));
+	int *result = malloc((size_t) m * (size_t) n * sizeof(int));
+	*returnSize = m * n;
 
-	int i = 0, j = -1;
-	int currentLength = n;
+	int i = 0, j = -1;  /* Current position in the matrix. */
+	int k = 0;          /* Current position in the result array. */
+	int currLength = n; /* We start with the horizontal length. */
 	int otherLength = m - 1;
-	int iDirection = 0;
-	int jDirection = 1;
+	int di = 0;         /* Current i-direction, i.e., vertical change. */
+	int dj = 1;         /* Current j-direction. i.e., horizontal change. */
 
-	while (currentLength > 0) {
-		for (int dummy = 0; dummy < currentLength; ++dummy) {
-			i += iDirection;
-			j += jDirection;
-			result[k++] = matrix[i][j];
+	while (currLength > 0) {
+		for (int remaining = currLength; remaining > 0; --remaining) {
+			i += di, j += dj; /* Note that we *must* start a movement. */
+			result[k++] = mat[i][j];
 		}
-		int tmp = jDirection;
-		jDirection = -iDirection; /* rotation matrix */
-		iDirection = tmp;
+		int tmp = dj; /* We use the      */
+		dj = -di;     /* rotation [0 -1] */
+		di = tmp;     /* matrix   [1  0] */
 
 		tmp = otherLength;
-		otherLength = --currentLength;
-		currentLength = tmp;
+		otherLength = --currLength;
+		currLength = tmp;
 	}
 
-	*returnSize = m * n;
 	return result;
 }
