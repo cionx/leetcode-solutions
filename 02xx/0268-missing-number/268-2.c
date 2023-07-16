@@ -1,10 +1,12 @@
 /* 268. Missing Number */
 
 /* Complexities.
- * Time:  O(n)
- * Space: O(1)
- * where n is the length of the input array.
- */
+ * Time:  Θ(n)
+ * Space: Θ(1)
+ * where n is the length of the input array. */
+
+/* Note.
+ * We use long long to avoid overflows. */
 
 int missingNumber(int *nums, int numsSize)
 {
@@ -18,5 +20,3 @@ int missingNumber(int *nums, int numsSize)
 
 	return (int) missing;
 }
-
-/* Note: we use long long to avoid overflows. */
