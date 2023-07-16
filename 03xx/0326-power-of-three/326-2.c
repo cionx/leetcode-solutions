@@ -4,10 +4,9 @@
 
 /* Complexities.
  * Time O(log(n))
- * Space: with tail recursion elimination: O(1)
+ * Space: with tail recursion elimination: Θ(1)
  *        without tail recursion elimination: O(log(n))
- * where n is the input number.
- */
+ * where n is the input number. */
 
 #include <stdbool.h>
 
