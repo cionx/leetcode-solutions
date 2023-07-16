@@ -3,10 +3,9 @@
 /* Recursive solution. */
 
 /* Complexities.
- * Time: O(n)
+ * Time: Θ(n)
  * Space O(h)
- * where n is the number of nodes in the tree and h is the height of the tree.
- */
+ * where n is the number of nodes in the tree and h is its height. */
 
 #include <limits.h>
 #include <stdbool.h>
