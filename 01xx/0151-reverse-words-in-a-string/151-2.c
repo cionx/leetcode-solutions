@@ -3,15 +3,15 @@
 /* In-place, iterative solution. */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(1)
+ * Time: Θ(n)
+ * Space: Θ(1)
  * where n is the length of the input array. */
 
 /* Idea.
  * We first remove leading and trailing spaces, and squash together blocks of
- * spaces into a single space. Then we reverse the entire string. This reverses
- * the position of the words as desired, but also reverses each word internally.
- * We revert the second effect by reversing each word. */
+ * consecutive spaces into a single space. Then we reverse the entire string.
+ * This reverses the position of the words as desired, but also reverses each
+ * word internally. We revert the second effect by reversing each word. */
 
 #include <string.h>
 
@@ -23,7 +23,7 @@ char *reverseWords(char *str)
 {
 
 	/* STEP 1: remove leading and trailing spaces, and also squash together
-	 * blocks of spaces. */
+	 * blocks of consecutive spaces. */
 	int length = normalizeSpaces(str);
 
 	/* STEP 2: reverse the entire string. */
@@ -32,28 +32,32 @@ char *reverseWords(char *str)
 	/* STEP 3: Go through the string and reverse each word. */
 	int start, end;
 	for (start = 0; start < length; start = end + 1) {
+		/* Search for the beginning of the next word. */
 		while (str[start] == ' ')
 			++start;
+		/* Search for the end of the word. */
 		end = start;
 		while (end < length && str[end] != ' ')
 			++end;
 		--end;
+		/* Finally, reverse the found word. */
 		reverse(str, start, end);
-		/* Note: if s[start] ends with EOF, the end = start - 1, and the reverse
-		 * will do nothing. The loop will terminate afterwards. */
+		/* Note: if s[start] is EOF, the end = start - 1, and the above call to
+		 * reverse will do nothing. The loop will terminate afterwards. */
 	}
 
 	return str;
 }
 
-/* Removes leading and trailing spaces, and replaces blocks of spaces by a
- * single space. Returns the new length. */
+/* normalizeSpaces(s): Removes leading and trailing spaces from s, and replaces
+ * blocks of consecutive spaces by a single space. Returns the new length. */
 int normalizeSpaces(char *str)
 {
 	const size_t length = strlen(str);
 
-	unsigned int from = 0; /* To compare with length without conversion. */
+	unsigned int from = 0; /* uint to compare with length without conversion. */
 	int to = 0;
+	/* We simplify (spaces + word) to (word + single space) as we go. */
 	while (from < length) {
 		while (str[from] == ' ')
 			++from;
@@ -61,7 +65,8 @@ int normalizeSpaces(char *str)
 			str[to++] = str[from++];
 		str[to++] = ' ';
 	}
-	/* Remove accidental spaces as the end. */
+	/* Ignore unnecessarily added spaces at the end. There is at least one such
+	 * space, as we added a space after the last word. */
 	do
 		--to;
 	while (to >= 0 && str[to] == ' ');
@@ -70,7 +75,7 @@ int normalizeSpaces(char *str)
 	return to;
 }
 
-/* Reverses a substring. */
+/* reverse(s, i, j): reverses the substring s[i : j]. */
 void reverse(char *str, int first, int last)
 {
 	for (int i = first, j = last; i < j; ++i, --j) {

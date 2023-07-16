@@ -3,8 +3,8 @@
 /* Not-in-place, iterative solution. */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(1)
+ * Time: Θ(n)
+ * Space: Θ(1)
  * where n is the length of the input array. */
 
 #include <stdlib.h>
