@@ -10,7 +10,8 @@ int findMaxConsecutiveOnes(int *nums, int numsSize)
 	int max = 0;
 	for (int i = 0; i < numsSize;) {
 		if (nums[i++] != 1)
-			continue;
+			continue; /* Jump two lines up. */
+		/* We only get here when we are at the start of a new block of 1s. */
 		int counter = 1;
 		while (i < numsSize && nums[i++] == 1)
 			++counter;
