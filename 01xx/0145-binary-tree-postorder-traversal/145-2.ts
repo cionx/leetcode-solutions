@@ -3,11 +3,11 @@
 /* Iterative solution. */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(h)
- * where n is the number of nodes in the tree,
- * and h is the height of the tree. */
+ * Time: Θ(n)
+ * Space: ?
+ * where n is the number of nodes in the tree, and h is its height. */
 
+/* Do not copy this class definition to LeetCode. */
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -19,25 +19,21 @@ class TreeNode {
   }
 }
 
-/* Do not copy the above class definition to LeetCode. */
-
-type NodeOrLeaf = TreeNode | null;
-
 /* Instead of left -> right -> value, we are using value -> right -> left,
  * and afterwards reverse the resulting list.
  */
-function postorderTraversal(root: NodeOrLeaf): number[] {
+function postorderTraversal(root: TreeNode | null): number[] {
   const result: number[] = [];
 
-  const yetToVisitLeftBranch = [];
-  let current: NodeOrLeaf = root;
-  while (current !== null || yetToVisitLeftBranch.length > 0) {
+  const yetToVisitLeftBranches = [];
+  let current: TreeNode | null = root;
+  while (current !== null || yetToVisitLeftBranches.length > 0) {
     while (current !== null) {
       result.push(current.val);
-      yetToVisitLeftBranch.push(current);
+      yetToVisitLeftBranches.push(current.left);
       current = current.right;
     }
-    current = yetToVisitLeftBranch.pop()?.left || null;
+    current = yetToVisitLeftBranches.pop() || null;
   }
 
   result.reverse();
