@@ -1,10 +1,9 @@
 /* 104. Maximum Depth of Binary Tree */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(h)
- * where n is the number of nodes in the tree,
- * and h is the height of the tree. */
+ * Time: Θ(n)
+ * Space: Θ(h)
+ * where n is the number of nodes in the tree, and h is its height. */
 
 #include <stdlib.h>
 
