@@ -3,12 +3,11 @@
 /* Recursive solution. */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(h)
- * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- */
+ * Time: Θ(n)
+ * Space: Θ(h)
+ * where n is the number of nodes in the tree, and h is its height. */
 
+/* Do not copy this class definition to LeetCode. */
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -20,22 +19,19 @@ class TreeNode {
   }
 }
 
-/* Do not copy the above class definition to LeetCode. */
+function preorderTraversal(root: TreeNode | null): number[] {
+  const result: number[] = [];
 
-type NodeOrLeaf = TreeNode | null;
-
-function preorderTraversal(root: NodeOrLeaf): number[] {
-  function addValues(tmpResult: number[], root: NodeOrLeaf): void {
+  function addValues(root: TreeNode | null): void {
     if (root === null) {
       return;
     }
-    tmpResult.push(root.val);
-    addValues(tmpResult, root.left);
-    addValues(tmpResult, root.right);
+    result.push(root.val);
+    addValues(root.left);
+    addValues(root.right);
   }
 
-  const result: number[] = [];
-  addValues(result, root);
+  addValues(root);
 
   return result;
 }
