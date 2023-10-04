@@ -3,12 +3,11 @@
 /* Iterative solution, as explained in the editorial. */
 
 /* Complexities.
- * Time: O(n)
- * Space: O(h)
- * where n is the number of nodes in the tree,
- * and h is the height of the tree.
- */
+ * Time: Θ(n)
+ * Space: Θ(h)
+ * where n is the number of nodes in the tree, and h is its height. */
 
+/* Don’t copy this class definition to LeetCode. */
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -20,15 +19,11 @@ class TreeNode {
   }
 }
 
-/* Don’t copy the above class definition to LeetCode. */
-
-type NodeOrLeaf = TreeNode | null;
-
-function inorderTraversal(root: NodeOrLeaf): number[] {
+function inorderTraversal(root: TreeNode | null): number[] {
   const result: number[] = [];
   const yetToCheckOutRightChild: TreeNode[] = [];
 
-  let current: NodeOrLeaf = root;
+  let current: TreeNode | null = root;
   while(current !== null || yetToCheckOutRightChild.length > 0) {
     while (current !== null) {
       yetToCheckOutRightChild.push(current);

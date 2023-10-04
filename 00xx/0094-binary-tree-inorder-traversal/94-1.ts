@@ -1,14 +1,13 @@
 /* 94. Binary Tree Inorder Traversal */
 
-/* Recursive solution */
+/* Recursive solution. */
 
-/* Complexities
- * Time: O(n)
- * Space: O(h)
- * where n is the number of nodes in the tree
- * and h is the height of the tree.
- */
+/* Complexities.
+ * Time: Θ(n)
+ * Space: Θ(h)
+ * where n is the number of nodes in the tree, and h is its height. */
 
+/* Don’t copy this class definition to LeetCode. */
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -20,19 +19,19 @@ class TreeNode {
   }
 }
 
-/* Don’t copy the above class definition to LeetCode. */
+function inorderTraversal(root: TreeNode | null): number[] {
+  const result: number[] = [];
 
-type NodeOrLeaf = TreeNode | null;
-
-function inorderTraversal(root: NodeOrLeaf): number[] {
-  function aux(left: number[], root: NodeOrLeaf): number[] {
+  function addValues(root: TreeNode | null): void {
     if (root === null) {
-      return left;
+      return;
     }
-    const newLeft = aux(left, root.left);
-    newLeft.push(root.val);
-    return aux(newLeft, root.right);
+    addValues(root.left);
+    result.push(root.val);
+    addValues(root.right);
   }
 
-  return aux([], root);
+  addValues(root);
+
+  return result;
 }
